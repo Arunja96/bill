@@ -1,0 +1,28 @@
+.animated-button {
+    border: none;
+    background-color: #ffffff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.animated-button:hover {
+    background-color: #b1dcf8;
+}
+
+.animated-button:active {
+    transform: scale(0.95);
+    background-color: #91bfda;
+}
+
+.readonly-button {
+    padding: 15px 30px;
+    background-color: #ffffff; /* Grayed out background color */
+    border: none;
+    border-radius: 5px;
+    cursor: not-allowed; /* Display a "not-allowed" cursor for a visual indication */
+}
+
+.readonly-button img{
+    opacity: 0.5;
+    border-radius: 20px;
+}

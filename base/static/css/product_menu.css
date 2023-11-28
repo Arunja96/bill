@@ -1,0 +1,76 @@
+/* Basic styling for the page container */
+.container {
+    display: flex;
+}
+
+/* Styling for the main content area */
+.content {
+    flex: 1;
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+/* Styling for the right sidebar */
+.sidebar-prod {
+    width: 450px;
+    background-color: #333;
+    color: #fff;
+}
+
+/* Sidebar menu styles */
+.sidebar-prod ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar-prod li {
+    padding: 10px 20px;
+    border-bottom: 1px solid #555;
+}
+
+.sidebar-prod a {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+}
+
+/* Hover effect for sidebar menu items */
+.sidebar-prod li:hover {
+    background-color: #555;
+}
+
+/* Styling for the search bar */
+.search-bar {
+    padding: 20px;
+    text-align: center;
+    display: flex;
+}
+
+.search-bar input {
+    width: 80%;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+
+.search-bar button {
+    padding: 5px 10px;
+    background-color: #555;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.search-bar button:hover {
+    background-color: #777;
+}
+
+.total-input{
+    background-color: #ffffff
+}
+.billtotalamount{
+    display: flex;
+    justify-content: flex-end;
+}
