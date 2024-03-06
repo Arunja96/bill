@@ -1,0 +1,40 @@
+{% extends 'index.html' %}
+{% load static %}
+{% block additional_css %}
+<link rel="stylesheet" href="{% static 'css/navbar_bill.css' %}">
+{% endblock %}
+{% block main-content %}
+
+<div class="main-panel">
+  <div class="content-wrapper">
+    <div class="row">
+      <div class="col-lg-12 grid-margin stretch-card">
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title">Product Category</h4>
+            <p class="card-description">
+              <!-- <div class="mt-3">
+              <a type="submit" class="btn btn-block btn-primary btn-sm font-weight-medium auth-form-btn"
+                href="{% url 'newproduct' %}">Create</a>
+            </div> -->
+            <div class="mt-3">
+              <a type="submit" class="btn btn-block btn-primary btn-sm font-weight-medium auth-form-btn"
+                href="{% url 'viewproduct' %}">Back</a>
+            </div>
+            </p>
+            <form action="{% url 'newproduct' %}" method="post">
+              {% csrf_token %}
+                {{ form }}
+              <button type="submit">Save</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- content-wrapper ends -->
+
+
+</div>
+
+{% endblock %}
